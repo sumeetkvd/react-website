@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+  .header {
+    position: fixed;
+    height: 79px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #111111;
+    align-items: center;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+    z-index: 10000;
+  }
+  .PollPoint {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1.85rem;
+    font-weight: 900;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .nav__links {
+    display: flex;
+    height: inherit;
+    width: 31%;
+    align-items: center;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 89px;
+    padding: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 15px;
+    transform: translateY(1px);
+    border-bottom: 3px solid transparent;
+  }
+  .nav__link:hover {
+    border-bottom: 3px solid #ff4655;
+    text-decoration: none;
+  }
+  
+  .nav__link a {
+    transform: translateY(2px);
+    text-decoration: none;
+    color: white;
+  }
+  .login--btn {
+    margin-left: 399px;
+  }
+  .login__signup {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    height: 40px;
+    width: 127px;
+    background-color: #ff4655;
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 0px;
+    border-radius: 3px;
+    transition: all 300ms;
+    margin-top: 18px;
+  }
+  
+  .login__signup:hover {
+    background-color: #111111;
+  }
+  
+  .pollpoint__heading {
+    width: 17%;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btns--header {
+    width: 52%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .ham {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+  }
+  .hamburger {
+    margin-right: 30px;
+    display: none;
+  }
+  
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
+    .hamburger {
+      display: block;
+      margin-left: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 22px;
+      left: 89%;
+    }
+    .btns--header {
+      display: block;
+      margin-top: 159px;
+      margin-left: 69px;
+    }
+    .login__signup {
+      margin-top: 22px;
+    }
+    .login--btn {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    .nav__links {
+      margin-left: 24px;
+    }
+    .nav__link {
+      width: 28px;
+      padding: 5px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      margin-left: 7px;
+      margin-right: 8px;
+    }
+    .PollPoint {
+      font-size: 0.8rem;
+      margin-left: 65px;
+    }
+  }
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .hamburger {
+      display: block;
+      margin-left: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 22px;
+      left: 89%;
+    }
+    .btns--header {
+      display: block;
+      margin-top: 159px;
+      margin-left: 69px;
+    }
+    .login__signup {
+      margin-top: 22px;
+    }
+    .login--btn {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    .nav__links {
+      margin-left: 24px;
+    }
+    .nav__link {
+      width: 45px;
+      padding: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-left: 22px;
+      margin-right: 8px;
+    }
+    .PollPoint {
+      font-size: 0.8rem;
+      margin-left: 65px;
+    }
+  }
